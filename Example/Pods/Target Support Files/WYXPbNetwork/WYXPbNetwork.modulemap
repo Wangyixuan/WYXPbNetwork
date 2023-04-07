@@ -1,0 +1,6 @@
+framework module WYXPbNetwork {
+  umbrella header "WYXPbNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,23 @@
+PODS:
+  - WYXLanguageUtil (0.2)
+  - WYXPbNetwork (0.1):
+    - WYXLanguageUtil
+
+DEPENDENCIES:
+  - WYXPbNetwork (from `../`)
+
+SPEC REPOS:
+  https://github.com/Wangyixuan/WYXPodsSpec.git:
+    - WYXLanguageUtil
+
+EXTERNAL SOURCES:
+  WYXPbNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WYXLanguageUtil: 4a053a9110399079543244c8b5a631341f9e330b
+  WYXPbNetwork: 813851fa73b61ca85be091270ad9e963462c3fa5
+
+PODFILE CHECKSUM: 6a24258f8c8cb6baaaef58ceaf9167368a33979e
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,6 @@
+framework module Pods_WYXPbNetwork_Example {
+  umbrella header "Pods-WYXPbNetwork_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,7 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '11.0'
+source 'https://github.com/Wangyixuan/WYXPodsSpec.git'
 
 target 'WYXPbNetwork_Example' do
   pod 'WYXPbNetwork', :path => '../'

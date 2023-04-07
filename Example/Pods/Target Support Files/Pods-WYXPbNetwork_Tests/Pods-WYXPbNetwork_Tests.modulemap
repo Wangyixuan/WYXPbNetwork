@@ -1,0 +1,6 @@
+framework module Pods_WYXPbNetwork_Tests {
+  umbrella header "Pods-WYXPbNetwork_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

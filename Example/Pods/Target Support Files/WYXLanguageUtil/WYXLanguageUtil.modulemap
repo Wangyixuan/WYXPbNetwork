@@ -1,0 +1,6 @@
+framework module WYXLanguageUtil {
+  umbrella header "WYXLanguageUtil-umbrella.h"
+
+  export *
+  module * { export * }
+}

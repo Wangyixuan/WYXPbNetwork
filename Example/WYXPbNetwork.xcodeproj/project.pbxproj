@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0777F9D8B73E4665791FC9D5 /* Pods-WYXPbNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYXPbNetwork_Tests.release.xcconfig"; path = "Target Support Files/Pods-WYXPbNetwork_Tests/Pods-WYXPbNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		261D5BB5103B80D8F1BAB962 /* Pods-WYXPbNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYXPbNetwork_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WYXPbNetwork_Tests/Pods-WYXPbNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2E58041BB07C6EA18A2E9473 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2E58041BB07C6EA18A2E9473 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3013C2E96E21381481A4B671 /* Pods_WYXPbNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WYXPbNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B998E98B46428CC9A64437 /* Pods-WYXPbNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYXPbNetwork_Example.debug.xcconfig"; path = "Target Support Files/Pods-WYXPbNetwork_Example/Pods-WYXPbNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WYXPbNetwork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYXPbNetwork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +64,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9593F8D3016818F161E71666 /* Pods-WYXPbNetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYXPbNetwork_Example.release.xcconfig"; path = "Target Support Files/Pods-WYXPbNetwork_Example/Pods-WYXPbNetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9992709C8D3358D468232B88 /* WYXPbNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WYXPbNetwork.podspec; path = ../WYXPbNetwork.podspec; sourceTree = "<group>"; };
+		9992709C8D3358D468232B88 /* WYXPbNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WYXPbNetwork.podspec; path = ../WYXPbNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DD4F9712784076BF34484A4B /* Pods_WYXPbNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WYXPbNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEED239CA2B06CD2A4A650D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DEED239CA2B06CD2A4A650D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				261D5BB5103B80D8F1BAB962 /* Pods-WYXPbNetwork_Tests.debug.xcconfig */,
 				0777F9D8B73E4665791FC9D5 /* Pods-WYXPbNetwork_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WYXPbNetwork_Example/Pods-WYXPbNetwork_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WYXLanguageUtil/WYXLanguageUtil.framework",
 				"${BUILT_PRODUCTS_DIR}/WYXPbNetwork/WYXPbNetwork.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WYXLanguageUtil.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WYXPbNetwork.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
